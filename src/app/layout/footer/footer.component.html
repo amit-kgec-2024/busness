@@ -1,0 +1,20 @@
+<nav class="flex flex-row bg-white justify-around p-16 rounded-tl-3xl overflow-hidden bg-red-400 rounded-tl-[70px] rounded-tr-[50px]">
+  <div class="">
+    <h1 class="font-bold text-7xl">IndMart</h1>
+  </div>  
+  <ul class="flex flex-col gap-2 font-semibold">
+      <li *ngFor="let item of headerData">
+        <a [routerLink]="item.link" routerLinkActive="active" ariaCurrentWhenActive="page">{{ item.title }}</a>
+      </li>
+    </ul>
+    <ul class="flex flex-col gap-2 font-semibold">
+      <li *ngFor="let item of headerData">
+        <a [routerLink]="item.link" routerLinkActive="active" ariaCurrentWhenActive="page">{{ item.title }}</a>
+      </li>
+    </ul>
+    <ul class="flex flex-col gap-2 font-semibold">
+      <li *ngFor="let item of headerData">
+        <a [routerLink]="item.link" routerLinkActive="active" ariaCurrentWhenActive="page">{{ item.title }}</a>
+      </li>
+    </ul>
+</nav>

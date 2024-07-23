@@ -1,0 +1,13 @@
+<nav class="flex text-white flex-row fixed l-0 t-0 w-full drop-shadow-lg justify-around items-center bg-teal-600 font-sans font-semibold">
+  <a href="/">IndMart</a>
+    <ul class="flex gap-6 p-5">
+      <li *ngFor="let item of headerData">
+        <a [routerLink]="item.link" routerLinkActive="active" class="hover:text-slate-300" ariaCurrentWhenActive="page">{{ item.title }}</a>
+      </li>
+    </ul>
+  </nav>
+
+  
+ 
+  
+

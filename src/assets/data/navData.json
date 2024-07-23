@@ -1,0 +1,10 @@
+[
+    { "id": 1, "title": "Service", "link": "/service", "dropdown": true },
+    { "id": 2, "title": "Technologies", "link": "/technologies", "dropdown": true },
+    { "id": 3, "title": "Industries", "link": "/industries", "dropdown": true },
+    { "id": 4, "title": "Portfolio", "link": "/portfolio", "dropdown": true },
+    { "id": 5, "title": "Company", "link": "/company", "dropdown": true },
+    { "id": 6, "title": "Blog", "link": "/blog", "dropdown": true },
+    { "id": 7, "title": "Resources", "link": "/resources", "dropdown": true },
+    { "id": 8, "title": "Contact us", "link": "/contact", "dropdown": true }
+]

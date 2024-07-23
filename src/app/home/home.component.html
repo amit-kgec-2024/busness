@@ -1,0 +1,156 @@
+<div class=" bg-zinc-900 text-white font-sans">
+    <div class="h-screen text-white flex justify-around items-center bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% p-8">
+        <h1 class="font-bold text-6xl">Building software <br/>for industry leaders</h1>
+        <div class="w-80">
+            <p class="text-xl">Ideate, design, and develop powerful software. Leap into the future with a team trusted by the worlds biggest brands.</p>
+            <button class="px-4 py-1 bg-teal-400 font-semibold flex items-center rounded-sm shadow-2xl text-black mt-10 group">See our portfolio <span class="flex items-center w-6"><mat-icon class="mat-icon-rtl-mirror" class="group-hover:ml-6">arrow_forward</mat-icon></span></button>
+        </div>
+    </div>
+    <div class="border-b-2 border-slate-500">
+        <div class="flex flex-wrap gap-4 justify-center py-16">
+            <div *ngFor="let img of imgData1" class=" w-44">
+              <img [src]="img.src" alt="Company Logo">
+            </div>
+        </div>
+        <h1 class="text-white font-semibold text-center py-12">and 200+ other companies already trust us.</h1>
+    </div>
+    <div class="p-5">
+        <div class="flex justify-between py-8 items-center">
+            <h1 class="font-bold font-sans text-5xl">Our clients <br>lead the way</h1>
+            <p class="w-96">We blend innovative technologies with cutting-edge design to create digital products that excel in both function and form. Discover how our expertise brings ideas to life.</p>
+        </div>
+        <div class="flex flex-wrap justify-center my-10 gap-3">
+            <div *ngFor="let img of slideImage">
+                <div class="w-[300px] h-[400px] bg-center bg-cover group" [style.backgroundImage]="'url(' + img.src + ')'">
+                    <div class="bg-opacity-30 bg-black h-full flex flex-col justify-between">
+                        <div class="p-3 flex flex-row items-center justify-between">
+                            <div class="gap-1 flex text-sm">
+                                <button class="border px-3 rounded-full">Mobile</button>
+                                <button class="border px-3 rounded-full">Web</button>
+                            </div>
+                            <button class="border flex rounded-full w-6 h-6 items-center justify-center"><mat-icon class="mat-icon-rtl-mirror" class="text-sm">north_east</mat-icon></button>
+                        </div>
+                        <div class="p-3 flex flex-col items-start gap-3 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+                            <img src="https://www.miquido.com/wp-content/uploads/2024/04/dolbyio-logo.svg" alt="">
+                            <h1 class="font-bold text-xl">Dolby.io</h1>
+                            <p class="font-semibold">Lorem ipsum, dolor sit amet</p>
+                            <div class="w-full hidden group-hover:block transform transition-all duration-300 ease-in-out">
+                                <div class="border my-3 w-full"></div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio eligendi adipisci nulla quis autem accusantium, aut tempore</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="py-10">
+        <div class="flex flex-row items-start justify-between p-8">
+            <div class="">
+                <h1 class="font-bold text-5xl">Services</h1>
+                <p class="w-96 mt-8">Push boundaries with our tech.
+                    Turn your bold business ideas into
+                    outstanding digital products.</p>
+            </div>
+            <div class="">
+                <button class="font-bold flex items-center justify-center gap-3">Learn more<mat-icon class="mat-icon-rtl-mirror" class="text-sm rounded-full border w-6 h-6">north_east</mat-icon></button>
+            </div>
+        </div>
+        <div class="" *ngFor="let num of serviceData" >
+            <div class="border-y border-slte-800 flex flex-row justify-between items-center px-4 py-10 transition ease-in-out delay-450 hover:bg-gradient-to-r from-cyan-500 to-blue-500 duration-300 hover:py-16">
+                <div class="">
+                    <h2>{{num.numbers}}</h2>
+                    <h1 class="font-bold text-4xl">Ideate</h1>
+                </div>
+                <div class="">
+                    <p class="w-96 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo rerum corporis nesciunt reprehenderit, explicabo officia.</p>
+                </div>
+                <div class="flex flex-row gap-3">
+                    <button class="border px-3 rounded-full">UX</button>
+                    <button class="border px-3 rounded-full">UI</button>
+                    <button class="border px-3 rounded-full">UX Audits</button>
+                    <button class="border flex rounded-full w-6 h-6 items-center justify-center"><mat-icon class="mat-icon-rtl-mirror" class="text-sm">north_east</mat-icon></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="border bg-white text-black p-16">
+        <div class="">
+            <h1 class="font-bold text-4xl font-mono	">Our projects are always<br/> in the spotlight</h1>
+        </div>
+        <div class="flex flex-row flex-wrap items-center justify-center py-10">
+            <div class="" *ngFor="let itemv of projectData">
+                <div class="border p-3 flex flex-col justify-center items-center">
+                    <img [src]="itemv.src" alt="">
+                    <h1 class="font-semibold">{{itemv.title}}</h1>
+                    <h2 class="font-light">{{itemv.names}}</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="px-8 py-12 flex flex-col gap-14 border-b">
+        <div class="flex flex-row justify-between items-start">
+            <h1 class="font-bold text-8xl">Tangible results, <br/> right on schedule</h1>
+            <button class="font-bold flex items-center justify-center gap-3">Learn more<mat-icon class="mat-icon-rtl-mirror" class="text-sm rounded-full border w-6 h-6">north_east</mat-icon></button>
+        </div>
+        <div class="flex flex-row justify-center pt-16">
+            <div class="border p-14 flex flex-col">
+                <h1 class="font-bold text-8xl" data-speed="1000" data-stop="45">250+</h1>
+                <h2 class="text-xl">years in the game</h2>
+            </div>
+            <div class="border p-14 flex flex-col">
+                <h1 class="font-bold text-8xl" data-speed="1000" data-stop="45">250+</h1>
+                <h2 class="text-xl">years in the game</h2>
+            </div>
+            <div class="border p-14 flex flex-col">
+                <h1 class="font-bold text-8xl" data-speed="1000" data-stop="45">250+</h1>
+                <h2 class="text-xl">years in the game</h2>
+            </div>
+            <div class="border p-14 flex flex-col">
+                <h1 class="font-bold text-8xl" data-speed="1000" data-stop="45">250+</h1>
+                <h2 class="text-xl">years in the game</h2>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="py-10">
+        <div class="flex flex-row justify-around items-start py-10 px-6">
+            <h1 class="font-bold text-5xl w-full">Lead with wisdom. <br/> Articles & publications</h1>
+            <div class="w-full">
+                <div class="flex justify-end">
+                    <button class="font-bold flex items-center justify-center gap-3">See all<mat-icon class="mat-icon-rtl-mirror" class="text-sm rounded-full border w-6 h-6">north_east</mat-icon></button>
+                </div>
+                <p class="text-xl w-[70%]">Explore our ebooks, webinars, and extra resources to understand the latest tech trends and their impact on business. Crafted for forward-thinking leaders.</p>
+            </div>
+        </div>
+        <div class="flex flex-row justify-around items-center py-14">
+            <div class="w-[400px] h-[600px] shadow-2xl flex flex-col items-center justify-around group bg-gray-800">
+                <img src="https://www.miquido.com/wp-content/uploads/2024/05/Successful-AI-implementation-in-fintech-%E2%80%93-Book-cover-mockup.jpg" class="w-[75%] mt-5 group-hover:mt-0" alt="">
+                <div class="flex flex-col justify-center items-center">
+                    <h1 class="font-bold text-xl">Al in the fintech industry</h1>
+                    <h2 class="font-light text-xl">eBook</h2>
+                </div>
+            </div>
+            <div class="w-[400px] h-[600px] shadow-2xl flex flex-col items-center justify-around group bg-gray-800">
+                <img src="https://www.miquido.com/wp-content/uploads/2024/05/The-power-of-music-app-development-%E2%80%93-Book-cover-mockup.jpg.webp" class="w-[75%] mt-5 group-hover:mt-0" alt="">
+                <div class="flex flex-col justify-center items-center">
+                    <h1 class="font-bold text-xl">The power of music app development</h1>
+                    <h2 class="font-light text-xl">eBook</h2>
+                </div>
+            </div>
+            <div class="w-[400px] h-[600px] shadow-2xl flex flex-col items-center justify-around group bg-gray-800">
+                <img src="https://www.miquido.com/wp-content/uploads/2024/05/Flutter-the-Holy-Grail-of-fintech-%E2%80%93-Book-cover-mockup.jpg" class="w-[75%] mt-5 group-hover:mt-0" alt="">
+                <div class="flex flex-col justify-center items-center">
+                    <h1 class="font-bold text-xl">Flutter: the Holy Grail of FinTech?</h1>
+                    <h2 class="font-light text-xl">eBook</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+

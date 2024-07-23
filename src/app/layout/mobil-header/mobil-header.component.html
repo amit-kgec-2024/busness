@@ -1,0 +1,7 @@
+<nav class="flex text-red-500 flex-col">
+  <ul class="flex text-red-500 gap-6 p-5">
+    <li *ngFor="let item of headerData">
+      <a [routerLink]="item.link" routerLinkActive="active" ariaCurrentWhenActive="page">{{ item.title }}</a>
+    </li>
+  </ul>
+</nav>
